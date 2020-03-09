@@ -1,0 +1,12 @@
+
+-This is a POM TestNG framework. Base class will handle the driver and opening, closing calls .i.e. quitting the dirver.
+- Each page class will handle the page methods and page elements. Page elements can also be moved out as json file for each page class.
+- TestUtils class will handle util methods such as wait time etc or other data.
+- Properties file is being used to provide driver class capabilities.
+- pom.xml file can run the tests on jenkin but surefire dependency has not been added at the moment
+- Maven, TestNg, JDK 11, UiAutomator2 and appium server 1.15.1 has been used to create the framework.
+- HomePageTests.java (src/test/java) file contains "skip home page" test.
+- At the moment framework is only supporting android since this framework is created on windows.
+- To run the tests, please run testng.xml file as TesNg Suite. 
+- Apk files can be placed in resources/app. Or apks can be places in desired location and update the path in driver class.
+- Error logging and error screen shot has not been implemented at the moment. 
